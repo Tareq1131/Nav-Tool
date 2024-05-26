@@ -1,0 +1,36 @@
+.navCss{
+    background: #000 !important;
+    color: aliceblue;
+    
+}
+
+/* navstyle.css */
+
+.navbar .menu li a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .navbar .menu li a:hover,
+  .navbar .menu li.active a {
+    color: #0aa8d8; /* Adjust the color as needed */
+  }
+  
+  .navbar .menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0a7d9a; /* Adjust the color as needed */
+    transition: width 0.3s;
+  }
+  
+  .navbar .menu li a:hover::after,
+  .navbar .menu li.active a::after {
+    width: 100%;
+  }
+  
